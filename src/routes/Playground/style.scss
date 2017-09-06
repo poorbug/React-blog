@@ -1,0 +1,26 @@
+@import './parameters';
+
+.playground {
+  width: 30rem; height: 50rem;
+  background-color: $bg-color;
+  margin: 3rem 0 0 0; padding: 3rem;
+  display: inline-block;
+  h1 {
+    font-size: 1.5rem; font-weight: 200; color: $secondary-white;
+    margin: 0;
+    > span {
+      float: right;
+      font-size: 1rem; color: $primary-white;
+      cursor: pointer;
+    }
+  }
+}
+
+.desc {
+  width: 30rem;
+  padding: 3rem;
+  display: inline-block;
+  strong {
+    font-size: 1.5rem;
+  }
+}

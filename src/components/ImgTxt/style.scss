@@ -1,0 +1,61 @@
+@import 'src/styles/base';
+@import 'src/styles/theme';
+@import 'src/styles/susy';
+@import 'src/styles/mixins';
+
+.imgtxt{
+  width: 43.75rem;
+  text-align: center;
+  margin: 0 auto 1.5rem auto;
+  > img {
+    max-width: 100%;
+  }
+  > p {
+    min-width: 20%;
+    max-width: 80%;
+    display: inline-block;
+    line-height: 1.7;
+    font-size: .875rem;
+    color: #969696;
+    padding: .625rem;
+    border-bottom: 1px solid #d9d9d9;
+    margin: 0;
+    min-height: 1.375rem;
+  }
+
+  @media ($large){
+    width: 62.5rem;
+  }
+
+  @media ($middle){
+    width: 90vw;
+    padding-bottom: 1rem;
+    > p {
+      line-height: normal;
+    }
+  }
+}
+
+.dialog {
+  width: 80vw;
+  > section {
+    text-align: center;
+    > h6 {
+      margin: 0 0 2rem 0;
+    }
+    > img {
+      width: 100%;
+    }
+  }
+  @media ($small) {
+    width: 100vw; max-width: 100vw;
+    border-radius: 0;
+    > section {
+      padding: 1.2rem 0 2.4rem 0;
+      > h6 {
+        font-size: 1.75rem;
+        margin: 0 0 1rem 0;
+      }
+    }
+  }
+}

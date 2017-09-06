@@ -1,0 +1,16 @@
+@import '../../parameters';
+
+.checkbox {
+  width: 1rem; height: 1rem;
+  border: 1px solid $secondary-white; border-radius: 5px;
+  display: inline-block;
+  margin: 0 .75rem 0 0;
+  position: relative;
+  cursor: pointer;
+  > svg {
+    width: .625rem; height: .625rem;
+    vertical-align: top;
+    position: absolute; left: 50%; top: 50%;
+    transform: translate(-50%, -50%);
+  }
+}

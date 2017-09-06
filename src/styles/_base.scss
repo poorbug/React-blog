@@ -1,0 +1,26 @@
+/*
+Application Settings Go Here
+------------------------------------
+This file acts as a bundler for all variables/mixins/themes, so they
+can easily be swapped out without `core.scss` ever having to know.
+
+For example:
+
+@import './variables/colors';
+@import './variables/components';
+@import './themes/default';
+*/
+
+// screen size
+$small: 'max-width: 555px';
+$middle: 'max-width: 700px';
+$normal: 'max-width: 1280px';
+$large: 'min-width: 1281px';
+
+//color
+$baseBlue: #3194d0;
+
+@font-face {
+  font-family: 'Oribitron';
+  src: url(http://omhr7p9e5.bkt.clouddn.com/blog/Orbitron-Black.ttf);
+}

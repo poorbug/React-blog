@@ -1,0 +1,12 @@
+@import '../../parameters';
+
+.job {
+  color: $secondary-white;
+  > span {
+    &:not(:first-child) {
+      line-height: 1rem;
+      vertical-align: top;
+    }
+    &[data-role='num'] { float: right; }
+  }
+}

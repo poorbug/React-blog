@@ -1,0 +1,63 @@
+@import 'src/styles/theme';
+@import 'src/styles/susy';
+@import 'src/styles/mixins';
+
+.box{
+	max-width: 50rem;
+	margin: auto;
+	color: #424B50;
+	text-align: center;
+	> h1{
+		font-size: 3rem;
+		margin-bottom: .5rem;
+	}
+	> p {
+		margin: 0;
+		> a{
+			font-size: 1rem;
+			padding-left: .25rem;
+			text-decoration: none;
+			color: inherit;
+		}
+	}
+	> ul{
+		margin-top: 5rem;
+		text-align: left;
+		> li{
+			margin-bottom: .5rem;
+			> a{
+				font-size: 2rem;
+				text-decoration: none;
+				color: #1ba1e2;
+			}
+		}
+	}
+
+	@include susy-media(min-width 556px) {
+		> h1 {
+			text-align: left;
+		}
+		> p {
+			text-align: left;
+		}
+	}
+
+	@include susy-media(max-width 555px) {
+		> h1,
+		> p {
+			text-align: center;
+		}
+    > h1 {
+      font-size: 2.5rem;
+    }
+		> ul {
+			padding: 0 1rem 0 2rem;
+      margin-top: 3rem;
+      > li {
+        > a {
+          font-size: 1.2rem;
+        }
+      }
+		}
+	}
+}

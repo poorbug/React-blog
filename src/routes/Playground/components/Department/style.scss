@@ -1,0 +1,26 @@
+@import '../../parameters';
+
+.department {
+  width: 100%;
+  margin: 1.5rem 0 0 0;
+  > div {
+    color: $primary-white;
+    padding: 0 0 .5rem 0;
+
+    > span {
+      &:not(:first-child) {
+        line-height: 1rem;
+        vertical-align: top;
+      }
+      &[data-role='num'] {
+        float: right;
+        padding: .25rem .5rem;
+        background-color: rgb(64, 87, 99);
+        border-radius: 1rem;
+      }
+    }
+  }
+  > ul {
+    list-style: none;
+  }
+}
